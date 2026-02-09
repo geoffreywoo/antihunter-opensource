@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Treasury Snapshot",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema": { "type": ["integer", "string", "null"] },
+    "date": { "type": ["string", "null"], "description": "YYYY-MM-DD" },
+    "updatedAt": { "type": ["string", "null"], "description": "ISO timestamp" },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "symbol": { "type": "string" },
+          "name": { "type": ["string", "null"] },
+          "chain": { "type": ["string", "null"] },
+          "address": { "type": ["string", "null"], "description": "Token contract address; null for native" },
+          "balance": { "type": ["number", "string"] },
+          "entryDate": { "type": ["string", "null"], "description": "YYYY-MM-DD" },
+          "costBasisEth": { "type": ["number", "null"] },
+          "costBasisUsd": { "type": ["number", "null"] },
+          "fmvUsd": { "type": ["number", "null"] },
+          "pnlUsd": { "type": ["number", "null"] }
+        },
+        "required": ["symbol", "balance"]
+      }
+    }
+  },
+  "required": ["rows"]
+}

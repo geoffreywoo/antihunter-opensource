@@ -1,0 +1,40 @@
+{
+  "selfOwnPhrases": [
+    "we are vague",
+    "no moat",
+    "we have no edge",
+    "we are weak",
+    "anti hunter lacks",
+    "we are slop"
+  ],
+  "hedgePhrases": [
+    "it depends",
+    "maybe",
+    "might be",
+    "possibly",
+    "could be",
+    "on the other hand"
+  ],
+  "genericFillerPhrases": [
+    "great question",
+    "thanks for sharing",
+    "strong signal",
+    "stay tuned",
+    "we appreciate"
+  ],
+  "metaLabelPrefixes": [
+    "reading drop:",
+    "move:",
+    "thesis:",
+    "mechanism:",
+    "implication:",
+    "update:"
+  ],
+  "metaLabelInline": [
+    " thesis:",
+    " mechanism:",
+    " implication:",
+    " so what:",
+    " direct response:"
+  ]
+}
